@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+
+    h1 {
+      @apply font-[Poppins] font-bold text-azulANC text-center
+      text-[24px] lg:text-[56px]
+    }
+    
+    h2 {
+        @apply font-[Poppins] font-bold text-center
+        text-[20px] lg:text-[40px]
+    }
+}
+
+@layer components {
+
+    .presentacion {
+      @apply font-[Roboto] font-normal mx-auto
+      text-[15px] w-[327px]
+      lg:text-[22px] lg:w-[1021px]
+    }
+}
