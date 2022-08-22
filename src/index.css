@@ -40,4 +40,10 @@
 
     }
 
+    .contenedor {
+      @apply  w-[311px] mx-auto
+              sm:px-[8%] sm:w-auto
+              xl:px-0 xl:w-[1016px]
+  }
+
 }
