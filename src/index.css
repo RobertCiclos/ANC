@@ -6,7 +6,10 @@
 
     h1 {
       @apply font-[Poppins] font-bold text-azulANC text-center
-      text-[24px] lg:text-[56px]
+      text-[24px] pt-[32px] pb-[24px] mx-[15px]
+      sm:text-[31px]
+      md:text-[38px] md:pt-[48px] md:pb-[30px]
+      lg:text-[56px] lg:pt-[72px] lg:pb-[43px]
     }
     
     h2 {
@@ -23,6 +26,18 @@
     .presentacion {
       @apply font-[Roboto] font-normal mx-auto
       text-[15px] w-[327px]
-      lg:text-[22px] lg:w-[1021px]
+      sm:text-[16px] sm:w-[610px]
+      md:text-[17px] md:w-[700px]
+      lg:text-[22px] lg:w-[1018px] xl:w-[1021px]
     }
+
+    .video {
+      @apply mx-auto
+    }
+    
+    .navbarbutton {
+      @apply font-[Poppins] font-normal
+      text-[16px] text-[#212121]
+    }
+
 }
