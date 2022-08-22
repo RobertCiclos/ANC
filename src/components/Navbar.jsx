@@ -17,10 +17,7 @@ const Navbar = () => {
         </button>
         <div
           className='invisible lg:visible lg:col-start-3 flex gap-x-[40px]'>
-          <button
-            className='font-[Poppins] font-semibold text-[16px] text-azulANC'>
-            Inicio
-          </button>
+          <button className='navbarbutton'> Inicio </button>
           <button className='navbarbutton'> Publicaciones </button>
           <button className='navbarbutton'> Actividad Académica </button>
           <button className='navbarbutton'> Proyectos </button>

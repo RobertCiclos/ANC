@@ -7,7 +7,7 @@ const Home = () => {
     <div>
         <section
             id="Video">
-            <img src='./imagenes/img-video.png' className='video'/>
+            <img src='./imagenes/img-video.png' alt='video Academia Nacional de Ciencias' className='video'/>
         </section>
 
         <section
