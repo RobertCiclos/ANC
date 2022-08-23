@@ -9,7 +9,7 @@ const Navbar = () => {
   
   return (
     <header
-      className='contenedor h-[49px] sm:h-[104px] '>
+      className='contenedor h-[49px] sm:h-[104px] py-[0px] '>
       <nav
         className=' grid grid-cols-2  items-center h-full
         lg:grid-cols-[1fr_644px]'>

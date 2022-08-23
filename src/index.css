@@ -6,10 +6,10 @@
 
     h1 {
       @apply font-[Poppins] font-bold text-azulANC text-center
-      text-[24px] pt-[32px] pb-[24px] mx-[15px]
+      text-[24px] pb-[24px] mx-[15px]
       sm:text-[31px]
-      md:text-[38px] md:pt-[48px] md:pb-[30px]
-      lg:text-[56px] lg:pt-[72px] lg:pb-[43px]
+      md:text-[38px] md:pb-[30px]
+      lg:text-[56px] lg:pb-[43px]
     }
     
     h2 {
@@ -41,9 +41,9 @@
     }
 
     .contenedor {
-      @apply  w-[311px] mx-auto
+      @apply  mx-auto w-[311px] pt-[32px] pb-[64px]
               sm:px-[8%] sm:w-auto
-              xl:px-0 xl:w-[1016px]
+              xl:px-0 xl:w-[1016px] xl:pt-[50px] xl:pb-[72px]
   }
 
 }
