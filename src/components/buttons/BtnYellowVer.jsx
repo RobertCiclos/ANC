@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BtnYellow_ver = () => {
+const BtnYellowVer = () => {
   return (
     <button
       className='justify-center text-center text-[#404040] bg-[#FFE252] rounded-[4px]
@@ -11,4 +11,4 @@ const BtnYellow_ver = () => {
   )
 }
 
-export default BtnYellow_ver
+export default BtnYellowVer

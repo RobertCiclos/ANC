@@ -1,18 +1,17 @@
 import React from 'react'
 import CardConsejo from '../components/cards/CardConsejo'
+import BtnYellowVer from '../components/buttons/BtnYellowVer'
 
 const Home = () => {
     const dbHome = require("../bd/home.json")
     console.log(dbHome)
   return (
     <div>
-        <section
-            id="Video">
+        <section id="Video">
             <img src='./imagenes/img-video.png' alt='video Academia Nacional de Ciencias' className='video'/>
         </section>
 
-        <section
-            id="Presentacion">
+        <section id="Presentacion">
             <div
                 className='contenedor'>
                 <h1 className=''> Academia Nacional de Ciencias </h1>
@@ -23,24 +22,21 @@ const Home = () => {
             </div>
         </section>
 
-        <section
-            id="Noticias">
+        <section id="Noticias">
             <div
                 className='contenedor'>
 
             </div>
         </section>
 
-        <section
-            id="Estadisticas">
+        <section id="Estadisticas">
             <div
                 className='contenedor'>
 
             </div>
         </section>
 
-        <section
-            id="Categorias">
+        <section id="Categorias">
             <div
                 className='contenedor'>
                 <h2
@@ -50,8 +46,7 @@ const Home = () => {
             </div>
         </section>
 
-        <section
-            id="Consejo">
+        <section id="Consejo">
             <div
                 className='contenedor'>
                 <h2
@@ -59,8 +54,10 @@ const Home = () => {
                     Consejo Directivo
                 </h2>
                 <div 
-                    className=' grid grid-cols-2 bg-slate-500 gap-auto
-                    xl:grid-cols-3 '>
+                    className=' grid justify-items-center
+                    grid-cols-2 pt-[40px]
+                    sm:grid-cols-1 md:grid-cols-2
+                    xl:grid-cols-3 xl:pt-[72px]'>
                     <CardConsejo foto='./imagenes/consejo/dr-alberto.png' nombre='Dr. Alberto Gago ' cargo='Presidente'/>
                     <CardConsejo foto='./imagenes/consejo/dr-gisella.png' nombre='Dra. Gisella Orjeda' cargo='Vicepresidente'/>
                     <CardConsejo foto='./imagenes/consejo/dr-jose.png' nombre='Dr. José Macharé' cargo='Secretario'/>
@@ -72,8 +69,7 @@ const Home = () => {
             </div>
         </section>
 
-        <section
-            id="Alianzas">
+        <section id="Alianzas">
             <div
                 className='contenedor'>
                 <h2
@@ -97,11 +93,33 @@ const Home = () => {
             </div>
         </section>
 
-        <section
-            id="Publicaciones">
+        <section id="Publicaciones">
             <div
                 className='contenedor'>
+                <div
+                    className='grid gap-x-[70px] gap-y-[64px]
+                    grid-cols-1
+                    lg:grid-cols-2 '>
+                    <div>
+                        <p
+                            className='publicados'>
+                            Artículos Publicados
+                        </p>
+                        <div>
 
+                        </div>
+                    </div>
+                    <div>
+                        <p
+                            className='publicados'>
+                            Libros Publicados
+                        </p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <BtnYellowVer/>
             </div>
         </section>
     </div>

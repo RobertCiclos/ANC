@@ -51,4 +51,11 @@
       sm:w-[164px] sm:h-[35px]
     }
 
+    .publicados {
+      @apply font-[Poppins] font-bold text-azulANC
+      text-[24px]
+      sm:text-[36px] sm:text-center
+      xl:text-[40px]
+    }
+
 }
