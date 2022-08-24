@@ -1,7 +1,7 @@
 import React from 'react'
 import Btnnoticias from '../components/buttons/Btnnoticias'
 import CardBiologia from '../components/cards/CardBiologia'
-import CardCategoria from '../components/cards/Cardcategorias'
+import CardCategoria from '../components/cards/CardCategoria'
 import CardConsejo from '../components/cards/CardConsejo'
 
 const Home = () => {
