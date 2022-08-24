@@ -6,7 +6,9 @@ const CardBiologia = (props) => {
         <div   
             className='grid grid-cols-[130px_180px] mx-auto border-b border-[#DDDDDD] pb-[16px]
             sm:grid-cols-[138px_302px] sm:gap-[32px] sm:w-[475px] sm:pb-[24px]'>
-            <img src={props.imagen} 
+            <img 
+                alt='card biologia'
+                src={props.imagen} 
                 className="w-[136x] h-[117px]
                 sm:w-[138px] sm:h-[146px]"/>
                     <div 

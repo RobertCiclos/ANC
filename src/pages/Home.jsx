@@ -37,9 +37,11 @@ const Home = () => {
                 <div
                     className='grid mx-auto  mb-[20px]
                     sm:grid-cols-2 sm:w-[1064px] sm:gap-[40px] sm:mb-[80px] sm:mt-[10px] '>
-                    <img src='imagenes/noticias/noticia-principal.png' 
+                    <img 
+                        alt='card'
+                        src='imagenes/noticias/noticia-principal.png' 
                         className='w-[327px] h-[200px] rounded-md
-                        sm:w-[541px] sm:h-[322px]'/>
+                        sm:w-[541px] sm:h-[322px] ' />
                     <div 
                         className='mt-[32px] mx-auto
                         sm:mt-[0px]'>
@@ -168,12 +170,8 @@ const Home = () => {
             </div>
         </section>
 
-        <section
-            id="Publicaciones">
-            <div
-                className='contenedor'>
+        <section>
 
-            </div>
         </section>
     </div>
   )
