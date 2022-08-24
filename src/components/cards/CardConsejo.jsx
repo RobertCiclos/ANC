@@ -5,10 +5,10 @@ const CardConsejo = (props) => {
     <div
         className='
         w-[162px] h-[177px]
-        sm:w-[288px] sm:h-[392px]'>
+        md:w-[288px] md:h-[392px]'>
         <img className='mx-auto
             w-[120px] h-[120px]
-            sm:w-[288px] sm:h-[288px]' 
+            md:w-[288px] md:h-[288px]' 
             src={props.foto}
             alt=''
         />
@@ -16,13 +16,13 @@ const CardConsejo = (props) => {
             <p
                 className='font-[Poppins] font-semibold text-center text-white
                 text-[14px] pt-[16px]
-                sm:text-[24px] sm:pt-[24]'>
+                md:text-[24px] md:pt-[24]'>
                 {props.nombre}
             </p>
             <p
                 className='font-[Roboto] text-white text-center
                 text-[12px] font-light
-                sm:text-[22px] sm:font-normal'>
+                md:text-[22px] md:font-normal'>
                 {props.cargo}
             </p>
         </div>

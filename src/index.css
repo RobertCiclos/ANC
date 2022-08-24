@@ -14,7 +14,7 @@
     
     h2 {
         @apply font-[Poppins] font-bold text-center
-        text-[20px] lg:text-[40px]
+        text-[20px] sm:text-[32px] lg:text-[40px]
     }
     
 }
@@ -44,6 +44,11 @@
       @apply  mx-auto w-[311px] pt-[32px] pb-[64px]
               sm:px-[8%] sm:w-auto
               xl:px-0 xl:w-[1016px] xl:pt-[50px] xl:pb-[72px]
-  }
+    }
+
+    .img-alianzas{
+      @apply  w-[104.09px]  h-[27.3px]
+      sm:w-[164px] sm:h-[35px]
+    }
 
 }

@@ -59,16 +59,15 @@ const Home = () => {
                     Consejo Directivo
                 </h2>
                 <div 
-                    className=' grid bg-slate-500
-                    grid-cols-2
-                    lg:grid-cols-3 lg:gap-x-[79px] lg:gap-y-[88px]'>
-                    <CardConsejo foto='' nombre='Dr. Alberto Gago ' cargo='Presidente'/>
-                    <CardConsejo foto='' nombre='Dra. Gisella Orjeda' cargo='Vicepresidente'/>
-                    <CardConsejo foto='' nombre='Dr. José Macharé' cargo='Secretario'/>
-                    <CardConsejo foto='' nombre='Dra. Dionicia Gamboa' cargo='Tesorera'/>
-                    <CardConsejo foto='' nombre='Dra. Silvia Rosas' cargo='Vocal'/>
-                    <CardConsejo foto='' nombre='Dra. Gretty Villena ' cargo='Vocal'/>
-                    <CardConsejo foto='' nombre='Dra. Luisa Vetter' cargo='Vocal'/>
+                    className=' grid grid-cols-2 bg-slate-500 gap-auto
+                    xl:grid-cols-3 '>
+                    <CardConsejo foto='./imagenes/consejo/dr-alberto.png' nombre='Dr. Alberto Gago ' cargo='Presidente'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-gisella.png' nombre='Dra. Gisella Orjeda' cargo='Vicepresidente'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-jose.png' nombre='Dr. José Macharé' cargo='Secretario'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-dionicia.png' nombre='Dra. Dionicia Gamboa' cargo='Tesorera'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-silvia.png' nombre='Dra. Silvia Rosas' cargo='Vocal'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-gretty.png' nombre='Dra. Gretty Villena ' cargo='Vocal'/>
+                    <CardConsejo foto='./imagenes/consejo/dr-luisa.png' nombre='Dra. Luisa Vetter' cargo='Vocal'/>
                 </div>
             </div>
         </section>
@@ -81,7 +80,20 @@ const Home = () => {
                     className='text-[#0668B8]'>
                     Alianzas y comunidades
                 </h2>
-
+                <div
+                    className='grid mx-auto gap-x-[32px]
+                    w-[278px] grid-cols-2 gap-y-[24.12px] pt-[46px]
+                    sm:w-[556px] sm:grid-cols-3 sm:gap-y-[40px] md:pt-[56px]
+                    lg:w-[752px] lg:grid-cols-4 lg:gap-y-[75px] lg:pt-[64px]'>
+                    <img classname='img-alianzas' src='./svg/tesla-logo.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/logo-google.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/ibm-logo.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/duolingo-logo.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/tesla-logo.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/logo-google.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/ibm-logo.svg' alt=''/>
+                    <img classname='img-alianzas' src='./svg/duolingo-logo.svg' alt=''/>
+                </div>
             </div>
         </section>
 
