@@ -8,10 +8,10 @@ const Home = () => {
     const dbHome = require("../bd/home.json")
     console.log(dbHome)
   return (
-    <div>
+    <div className=' '>
         <section
             id="Video">
-            <img src='./imagenes/img-video.png' alt='video Academia Nacional de Ciencias' className='video'/>
+            <img src='./imagenes/img-video.png' alt='video Academia Nacional de Ciencias' className='w-full lg:h-[calc(100vh-85px)] mx-auto'/>
         </section>
 
         <section

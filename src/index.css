@@ -45,9 +45,9 @@
     }
 
     .contenedor {
-      @apply  mx-auto w-[311px] pt-[32px] pb-[4px]
-              sm:px-[8%] sm:w-auto
-              xl:px-0 xl:w-[1016px] xl:pt-[50px] xl:pb-[22px]
+      @apply  mx-auto w-[327px] pt-[32px] pb-[4px]
+              sm:px-[8%] sm:w-auto bg-green-400
+              xl:px-0 xl:w-[1112px] xl:pt-[50px] xl:pb-[22px]
     }
 
 
