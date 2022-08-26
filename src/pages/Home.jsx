@@ -97,7 +97,7 @@ const Home = () => {
             <div
                 className='contenedor'>
                 <div
-                    className='grid gap-x-[70px] gap-y-[64px]
+                    className='grid justify-items-center gap-x-[70px] gap-y-[64px]
                     grid-cols-1
                     lg:grid-cols-2 '>
                     <div>
