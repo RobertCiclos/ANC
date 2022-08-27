@@ -1,9 +1,10 @@
 import React from 'react'
 import Btnnoticias from '../components/buttons/Btnnoticias'
-import CardBiologia from '../components/cards/CardBiologia'
+import CardBiologia from '../components/cards/CardNoticia'
 import CardCategoria from '../components/cards/CardCategoria'
 import CardConsejo from '../components/cards/CardConsejo'
 import BtnYellowVer from '../components/buttons/BtnYellowVer'
+import CardNoticia from '../components/cards/CardNoticia'
 
 const Home = () => {
     const dbHome = require("../bd/home.json")
@@ -35,22 +36,21 @@ const Home = () => {
                 </h1>
                 <div
                     className='grid mx-auto  mb-[20px]
-                    sm:grid-cols-2 sm:w-[1064px] sm:gap-[40px] sm:mb-[80px] sm:mt-[10px] '>
+                    lg:grid-cols-2 lg:w-[1064px] sm:gap-[40px] lg:mb-[80px] sm:mt-[10px] '>
                     <img 
                         alt='card'
                         src='imagenes/noticias/noticia-principal.png' 
-                        className='w-[327px] h-[200px] rounded-md
+                        className='w-[327px] h-[200px] rounded-md mx-auto
                         sm:w-[541px] sm:h-[322px] ' />
                     <div 
                         className='mt-[32px] mx-auto
                         sm:mt-[0px]'>
-                        <h3 
-                            className='h3'>
+                        <h3>
                             Biología digital en pandemia
                         </h3>
                         <div 
                             className='grid w-[310px] gap-[11px] mx-auto grid-cols-2 mt-[24px] 
-                            sm:w-[300px] sm:gap-[24px] sm:ml-[21px]'>
+                            md:w-[300px] sm:gap-[24px] sm:ml-[21px]'>
                             <p className='nombre'>
                                 Irving Suarez
                             </p>
@@ -59,7 +59,7 @@ const Home = () => {
                             </p>
                         </div>
                         <p 
-                            className='texto mt-[24px] 
+                            className='texto mt-[24px] w
                             sm:ml-[21px]'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies scelerisque mauris sed ipsum augue at tortor volutpat. Maecenas tortor suspendisse nibh aliquam tincidunt in risus eget. Et phasellus non ut senectus pellentesque purus...
                         </p>
@@ -68,51 +68,62 @@ const Home = () => {
                 </div>
                 <div 
                     className='grid mx-auto gap-[40px]
-                    sm:grid-cols-[472px_472px]  sm:w-[1064px] sm:gap-[100px]'>
-                    <CardBiologia imagen="imagenes/noticias/noticia1.png"/>
-                    <CardBiologia imagen="imagenes/noticias/noticia2.png"/>
-                    <CardBiologia imagen="imagenes/noticias/noticia1.png"/>
-                    <CardBiologia imagen="imagenes/noticias/noticia2.png"/>
+                    lg:grid-cols-[472px_472px]  lg:w-[1064px] lg:gap-[100px]'>
+                    <CardNoticia imagen="imagenes/noticias/noticia1.png"/>
+                    <CardNoticia imagen="imagenes/noticias/noticia2.png"/>
+                    <CardNoticia imagen="imagenes/noticias/noticia1.png"/>
+                    <CardNoticia imagen="imagenes/noticias/noticia2.png"/>
                 </div>
             </div>
         </section>
+
+
         <section
             id="Estadisticas"
-            className='grid w-[375px] mx-auto h-[429px] mt-[30px]
-            sm:mt-[80px]
-            sm:w-[1440px] sm:h-[448px]
+            className='grid mx-auto mt-[30px] h-[400px]
+            lg:mt-[80px]
+            lg:w-[1440px] lg:h-[448px]
             bg-[url("/public/imagenes/fondo-estadistica.png")] bg-center relative
             before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-40'>
             <div 
                 className='grid w-[294px] relative mx-auto estadistica 
-                lg:grid-cols-3 lg:w-[1010px] lg:gap-[100px] items-center'> 
-                  <p 
-                    className='
-                    lg:pb-[20px]'>
-                    10
+                lg:grid-cols-3 lg:w-[1440px] lg:gap-[70px] items-center'> 
+                <div>
                     <p 
-                        className='estadisitica2'>
-                        Directivos
-                    </p>
-                  </p>
-                  <p 
-                    className='
-                    lg:pb-[25px]'>
-                    400+
+                        className='mx-auto
+                        lg:pb-[20px]'>
+                        10
                         <p 
                             className='estadisitica2'>
-                            Miembros de la comunidad
+                            Directivos
                         </p>
-                  </p>
-                  <p 
-                    className='
-                    lg:pb-[25px]'>
-                      +60
-                      <p 
-                            className='estadisitica2'>
-                            Proyectos de investigación
-                        </p>
-                  </p>
+                    </p>
+                </div> 
+                
+                <div>
+                    <p 
+                        className='
+                        lg:pb-[25px]'>
+                        400+
+                            <p 
+                                className='estadisitica2'>
+                                Miembros de la comunidad
+                            </p>
+                    </p>
+                </div>
+                
+                <div className=''>
+                    <p 
+                        className='
+                        lg:pb-[25px]'>
+                        +60
+                        <p 
+                                className='estadisitica2'>
+                                Proyectos de investigación
+                            </p>
+                    </p>
+                </div>
+                  
             </div>
         </section>
 

@@ -19,7 +19,7 @@
     
     h3 {
         @apply font-[Poppins] font-medium text-left text-azulANC text-[16px]
-        lg:text-[32px] lg:text-center
+        sm:text-[32px] lg:text-center
     }
 }
 
@@ -70,42 +70,42 @@
 
   .noticias {
     @apply font-[Poppins] text-[18px] text-center
-    lg:text-[36px] font-medium text-[#333333]
+    sm:text-[36px] font-medium text-[#333333]
   }
 
   .nombre {
     @apply  font-[Poppins] text-[16px] font-medium text-azulANC
-    lg:text-[20px] 
+    sm:text-[20px] 
   }
 
   .numero {
     @apply  font-[Poppins] text-[12px] font-light text-[#5F5F5F] 
-    lg:text-[16px]
+    sm:text-[16px]
   }
 
   .texto {
     @apply  font-[Poppins] text-[10px] text-left font-light text-[#5F5F5F] 
-    lg:text-[18px]  
+    sm:text-[18px]  
   }
 
   .cardH3 {
     @apply font-[Poppins] font-medium text-left text-azulANC text-[12px]
-    lg:text-[20px] lg:text-center
+    sm:text-[20px] sm:text-center
   }
 
   .cardnombre {
     @apply  font-[Poppins] text-[10px] font-medium text-azulANC text-left
-    lg:text-[16px]
+    sm:text-[16px]
   }
 
   .cardnumero {
     @apply  font-[Poppins] text-[10px] font-light text-[#5F5F5F] 
-    lg:text-[14px]
+    sm:text-[14px]
   }
 
   .cardtexto {
     @apply  font-[Poppins] text-[10px] font-normal text-[#5F5F5F]  text-left
-    lg:text-[16px]
+    sm:text-[16px]
   }
 
   .estadistica {

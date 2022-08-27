@@ -8,7 +8,7 @@ module.exports = {
         'azulANC': '#0668B8'
       },
       screens:{
-        'lgaux' : '1059px',
+        'lgaux' : '1163px',
       }
     },
   },
