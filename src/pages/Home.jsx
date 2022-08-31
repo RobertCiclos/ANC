@@ -10,8 +10,7 @@ const Home = () => {
     console.log(dbHome)
   return (
     <div className=' '>
-        <section
-            id="Video">
+        <section id="Video">
             <img src='./imagenes/img-video.png' alt='video Academia Nacional de Ciencias' className='w-full lg:h-[calc(100vh-85px)] mx-auto'/>
         </section>
 
@@ -76,8 +75,8 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section
-            id="Estadisticas"
+
+        <section id="Estadisticas"
             className='grid w-[375px] mx-auto h-[429px] mt-[30px]
             sm:mt-[80px]
             sm:w-[1440px] sm:h-[448px]
@@ -132,7 +131,12 @@ const Home = () => {
             </div>
         </section>
 
-        <section id="Consejo">
+        <section id="Consejo"
+            className='grid w-[311px]
+            sm:px-[8%] sm:w-auto
+              xl:px-0 xl:w-[1016px] 
+            bg-[url("/public/imagenes/fondo-consejo.png")] bg-center relative
+            before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-40'>
             <div
                 className='contenedor'>
                 <h2
@@ -140,7 +144,7 @@ const Home = () => {
                     Consejo Directivo
                 </h2>
                 <div 
-                    className=' grid justify-items-center
+                    className=' grid justify-items-center absolute
                     grid-cols-2 pt-[40px]
                     sm:grid-cols-1 md:grid-cols-2
                     xl:grid-cols-3 xl:pt-[72px]'>
