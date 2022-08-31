@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CardBiologia = (props) => {
+const CardNoticia = (props) => {
   return (
     <section>
         <div   
@@ -43,4 +43,4 @@ const CardBiologia = (props) => {
   )
 }
 
-export default CardBiologia
+export default CardNoticia

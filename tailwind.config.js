@@ -7,6 +7,10 @@ module.exports = {
       colors: {
         'azulANC': '#0668B8'
       },
+      screens:{
+        'lgaux' : '1163px',
+        'lgcard' : '1240px',
+      }
     },
   },
   plugins: [],
