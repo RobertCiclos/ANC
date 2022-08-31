@@ -9,6 +9,7 @@ module.exports = {
       },
       screens:{
         'lgaux' : '1163px',
+        'lgcard' : '1240px',
       }
     },
   },

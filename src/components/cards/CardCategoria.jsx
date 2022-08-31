@@ -3,11 +3,15 @@ import React from 'react';
 const CardCategoria = (props) => {
   return (
     <div 
-      style={{backgroundImage: `url("imagenes/noticias/noticia1.png")`}}
-      className='w-[520px] h-[309px] mx-auto
+      style={{backgroundImage: `url(${props.imgC})`}}
+      className='w-[327px] h-[188px] mx-auto rounded-3xl  
+      sm:w-[520px] sm:h-[309px]
       bg-center relative
-      before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-40'>
-        
+      before:w-full before:h-full before:absolute before:bg-[#064e89] before:opacity-70 before:rounded-3xl '>
+      <h3 className='grid categoria absolute left-[40px] top-[121px]
+      sm:left-[40px] sm:top-[205px]'>
+         {props.texto}  
+      </h3>  
     </div>
   )
 }

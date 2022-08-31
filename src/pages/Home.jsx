@@ -5,7 +5,7 @@ import CardCategoria from '../components/cards/CardCategoria'
 import CardConsejo from '../components/cards/CardConsejo'
 import BtnYellowVer from '../components/buttons/BtnYellowVer'
 import CardNoticia from '../components/cards/CardNoticia'
-
+import BtnBlue_ver from '../components/buttons/BtnBlue_ver'
 const Home = () => {
     const dbHome = require("../bd/home.json")
     console.log(dbHome)
@@ -129,16 +129,22 @@ const Home = () => {
 
         <section id="Categorias">
             <div
-                className='contenedor'>
+                className='contenedor '>
                 <h2
-                    className=''>
+                    className='text-[#0668B8]'>
                     Categorías
                 </h2>
                 <div 
-                    className='grid grid-cols-2'>
-                    <CardCategoria/>
-                    <CardCategoria/>
-
+                    className='grid mt-[32px] grid-cols-1 gap-[40px] pb-[48px]
+                    lgcard:grid-cols-2 lgcard:gap-[50px] lg:mt-[75px]'>
+                    <CardCategoria imgC="./imagenes/categoria/card-historico.png" texto="Historico"/>
+                    <CardCategoria imgC="./imagenes/categoria/card-cultural.png" texto="Cultural"/>
+                    <CardCategoria imgC="./imagenes/categoria/card-lecturas.png" texto="Lecturas"/>
+                    <CardCategoria imgC="./imagenes/categoria/card-conocimiento.png" texto="Conocimiento"/>
+                </div>
+                <div 
+                    className='grid justify-items-center'>
+                    <BtnBlue_ver/>
                 </div>
             </div>
         </section>

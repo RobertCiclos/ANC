@@ -8,12 +8,12 @@ const Footer = () => {
       bg-[url("/public/imagenes/img-footer.png")] bg-cover bg-center relative
       before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-80'>
       <div 
-        className="mx-auto justify-items-center grid relative bg-slate-500">
+        className="mx-auto justify-items-center grid relative">
         <img src='svg/logo-footer.svg' alt='Logo del footer'
           className='mx-auto w-[48px] h-[64x]
           sm:w-[179px] sm:h-[241px]'/>
         <div 
-          className="grid grid-cols-3 w-[49px] gap-[8px] mx-auto bg-red-400
+          className="grid grid-cols-3 w-[49px] gap-[8px] mx-auto 
           sm:w-[180px] sm:gap-[30px] mt-[49px] mb-[36px]">
           <a href='https://www.instagram.com/'>
             <img src="./svg/logo-ig.svg" alt='Logo Instagram'
