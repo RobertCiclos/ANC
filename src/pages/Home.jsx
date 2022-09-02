@@ -1,11 +1,13 @@
 import React from 'react'
 import Btnnoticias from '../components/buttons/Btnnoticias'
-import CardBiologia from '../components/cards/CardNoticia'
 import CardCategoria from '../components/cards/CardCategoria'
 import CardConsejo from '../components/cards/CardConsejo'
 import BtnYellowVer from '../components/buttons/BtnYellowVer'
 import CardNoticia from '../components/cards/CardNoticia'
 import BtnBlue_ver from '../components/buttons/BtnBlue_ver'
+import CardArticulos from '../components/cards/CardArticulos'
+import CardLibros from '../components/cards/CardLibros'
+
 const Home = () => {
     const dbHome = require("../bd/home.json")
     console.log(dbHome)
@@ -18,7 +20,7 @@ const Home = () => {
         <section id="Presentacion">
             <div
                 className='contenedor'>
-                <h1 className=''> Academia Nacional de Ciencias </h1>
+                <h1> Academia Nacional de Ciencias </h1>
                 <p
                     className='presentacion '>
                     La Academia Nacional de Ciencias fue fundada el 6 de agosto de 1938 por un grupo de 35 distinguidos científicos peruanos, originalmente con el nombre “Academia Nacional de Ciencias Exactas, Físicas y Naturales de Lima”, para promocionar la investigación científica y la difusión del conocimiento científico.
@@ -76,19 +78,10 @@ const Home = () => {
             </div>
         </section>
 
-<<<<<<< HEAD
         <section id="Estadisticas"
-            className='grid w-[375px] mx-auto h-[429px] mt-[30px]
-            sm:mt-[80px]
-            sm:w-[1440px] sm:h-[448px]
-=======
-
-        <section
-            id="Estadisticas"
             className='grid mx-auto mt-[30px] h-[400px]
             lg:mt-[80px]
             lg:w-[1440px] lg:h-[448px]
->>>>>>> fa32e1d4535bbd040e6bd35320535cb26a57e844
             bg-[url("/public/imagenes/fondo-estadistica.png")] bg-center relative
             before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-40'>
             <div 
@@ -156,21 +149,21 @@ const Home = () => {
         </section>
 
         <section id="Consejo"
-            className='grid w-[311px]
+            className='grid w-[311px] mx-auto
             sm:px-[8%] sm:w-auto
-              xl:px-0 xl:w-[1016px] 
+              xl:px-0 2xl:w-[1440px] 
             bg-[url("/public/imagenes/fondo-consejo.png")] bg-center relative
-            before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-40'>
+            before:w-full before:h-full before:absolute before:bg-[#101E32] before:opacity-70'>
             <div
-                className='contenedor'>
+                className='contenedor relative'>
                 <h2
                     className='text-[#FFE252]'>
                     Consejo Directivo
                 </h2>
                 <div 
-                    className=' grid justify-items-center absolute
-                    grid-cols-2 pt-[40px]
-                    sm:grid-cols-1 md:grid-cols-2
+                    className=' grid justify-items-center
+                    grid-cols-2 gap-[8px] pt-[40px]
+                    sm:grid-cols-1 sm:gap-[79px] md:grid-cols-2
                     xl:grid-cols-3 xl:pt-[72px]'>
                     <CardConsejo foto='./imagenes/consejo/dr-alberto.png' nombre='Dr. Alberto Gago ' cargo='Presidente'/>
                     <CardConsejo foto='./imagenes/consejo/dr-gisella.png' nombre='Dra. Gisella Orjeda' cargo='Vicepresidente'/>
@@ -219,8 +212,12 @@ const Home = () => {
                             className='publicados'>
                             Artículos Publicados
                         </p>
-                        <div>
-
+                        <div
+                            className='py-[24px] lg:py-[32px]
+                            gap-y-[24px] lg:gap-y-[32px]'>
+                            <CardArticulos/>
+                            <CardArticulos/>
+                            <CardArticulos/>
                         </div>
                     </div>
                     <div>
@@ -228,12 +225,20 @@ const Home = () => {
                             className='publicados'>
                             Libros Publicados
                         </p>
-                        <div>
-                            
+                        <div
+                            className='py-[24px] lg:py-[32px]
+                            gap-y-[24px] lg:gap-y-[32px]'>
+                            <CardLibros/>
+                            <CardLibros/>
+                            <CardLibros/>
+                            <CardLibros/>
                         </div>
                     </div>
                 </div>
-                <BtnYellowVer/>
+                <div 
+                    className='grid justify-items-center'>
+                    <BtnYellowVer/>
+                </div>
             </div>
         </section>
     </div>

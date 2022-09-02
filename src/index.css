@@ -27,10 +27,10 @@
 
     .presentacion {
       @apply font-[Roboto] font-normal mx-auto
-      text-[15px] w-[327px]
-      sm:text-[16px] sm:w-[610px]
-      md:text-[17px] md:w-[700px]
-      lg:text-[22px] lg:w-[1018px] xl:w-[1021px]
+      text-[15px]
+      sm:text-[16px] 
+      md:text-[17px] 
+      lg:text-[22px]
     }
 
     .video {
@@ -57,9 +57,7 @@
 
     .publicados {
       @apply font-[Poppins] font-bold text-azulANC
-      text-[24px]
-      sm:text-[36px] sm:text-center
-      xl:text-[40px]
+      text-[24px] sm:text-[36px] xl:text-[40px]
     }
     
     .contenedor{
